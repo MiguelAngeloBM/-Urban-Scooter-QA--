@@ -43,7 +43,8 @@ Verificar se o status muda automaticamente após o término do tempo de locaçã
 Se o nome do entregador for muito longo ,,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-37
 Cancelamento de ordem,,,,
 "Botão ""Cancelar Pedido"":
-",,,,
+
+",,,,
 "Verificar se o botão ""Cancelar Pedido"" está presente e acessível na página de status do pedido.",,,,
 "Testar se o botão ""Cancelar Pedido"" está ativo apenas enquanto o pedido não foi entregue ao usuário.",,,,
 "Testar se uma janela pop-up de confirmação é exibida ao clicar no botão ""Cancelar Pedido"".",,,,
