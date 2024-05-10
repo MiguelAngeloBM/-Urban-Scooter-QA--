@@ -1,0 +1,99 @@
+,,,,,,,
+,,,,,,,
+Campo,Nome da classe,Limites,Dados de teste dentro da classe (campo de comentários),Dados de teste nos limites (campo de comentários),"Chrome 85
+1920x1080","Opera 71
+1920x1080",Link para o relatório de bug
+Nome,Apenas letras latinas,,Miguel,,Aprovado,Aprovado,
+,Letras nao Latinas,,"起司麵包
+",,Aprovado,Aprovado,
+,Usando espaço,,miguel  angelo,,Aprovado,Aprovado,
+,Usando hífen,,Miguel-angelo,,Aprovado,Aprovado,
+,2 a 15 caracteres, (2-14),Miguel,(1-2-3) (13-14-15),Aprovado,Aprovado,
+,Menos que 2 caracteres,(0-1),m,(0-1),Aprovado,Aprovado,
+,Mais que 15 caracteres,(16-17),miguelangelobicalho,(16-17),Aprovado,Aprovado,
+,Campo apenas com simbolos,,!#@$!@#,,Aprovado,Aprovado,
+,Campo com somente numeros,,1241241123,,Aprovado,Aprovado,
+,Campos vazios,,,,Aprovado,Aprovado,
+,campo obrigatorio,,,,Aprovado,Aprovado,
+,,,,,,,
+Sobrenome,Apenas letras latinas,,Miguel,,Aprovado,Aprovado,
+,Letras nao Latinas,,"起司麵包
+",,Aprovado,Aprovado,
+,Usando espaço,,miguel  angelo,,Aprovado,Aprovado,
+,Usando hífen,,Miguel-angelo,,Aprovado,Aprovado,
+,2 a 15 caracteres, (2-14),Miguel,(1-2-3) (13-14-15),Aprovado,Aprovado,
+,Menos que 2 caracteres,(0-1),m,(0-1),Aprovado,Aprovado,
+,Mais que 15 caracteres,(16-17),miguelangelobicalho,(16-17),Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-1
+,Campo apenas com simbolos,,!#@$!@#,,Aprovado,Aprovado,
+,Campo com somente numeros,,1241241123,,Aprovado,Aprovado,
+,Campos vazios,,,,Aprovado,Aprovado,
+,campo obrigatorio,,,,Aprovado,Aprovado,
+,,,,,,,
+Endereço,Apenas letras latinas,,xiquexique,,Aprovado,Aprovado,
+,Letras nao latina,,"西缺西缺
+",,Aprovado,Aprovado,
+,usando numero,,13 xiquexique,,Aprovado,Aprovado,
+,usando espaço,,xique xique,,Aprovado,Aprovado,
+,usando traços,,xique-xique,,Aprovado,Aprovado,
+,usando barras,,xique/xique,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-2
+,usando pontos e vírgula,,"xique,xique.ba",,Aprovado,Aprovado,
+,Deve ter entre 5 e 50 caracteres,(5-50),xiquexique,(4-5-6-49-50-51),Aprovado,Aprovado,
+,Menos que 5 caracteres,(3-4),xiqu,(3-4),Aprovado,Aprovado,
+,Mais que 50 caracteres,(51-52),Explorando as vastas fronteiras da imaginação e do conhecimento,(51-52),Aprovado,Aprovado,
+,campos apenas com simbolos,,@!$#$!@$,,Aprovado,Aprovado,
+,campos somente numeros,,123895127635,,Aprovado,Aprovado,
+,campo vazio,,,,Aprovado,Aprovado,
+,campo obrigatorio,,,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-3
+,,,,,,,
+"
+Estação de
+metrô
+
+",Estaçao do metro existente,,5th street,,Aprovado,Aprovado,
+,estaçao nao existente,,Xique xique ,,Aprovado,Aprovado,
+,campo vazio,,,,Aprovado,Aprovado,
+,campo obrigatorio,,,,Aprovado,Aprovado,
+,,,,,,,
+Telefone,"Apenas números e o símbolo ""+""",,(+12345678911),,Aprovado,Aprovado,
+,"Sem o símbolo ""+""",,12345678911,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-4
+,Deve ter entre 10 e 12 números,(10-12),(+123456789),(9-10-11-12-13),Aprovado,Aprovado,
+,menos de 10 numeros,(8-9),(+123456789),(8-9),Aprovado,Aprovado,
+,mais de 12 numeros,(13-14),(+1234567891011),(13-14),Aprovado,Aprovado,
+,campo apenas com letras,,audfg,,Aprovado,Aprovado,
+,campo apenas com simbolo,,!)@(#$%,,Aprovado,Aprovado,
+,campo vazio,,,,Aprovado,Aprovado,
+,campo obrigatorio,,,,Aprovado,Aprovado,
+,,,,,,,
+"Data de entrega",data futura,,06/04/2024,,Aprovado,Aprovado,
+,data atual,,05/04/2024,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-5
+,data passada,,03/04/2024,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-6
+,outras datas,,14/05/2024,,Aprovado,Aprovado,
+,campo obrigatorio,,,,Aprovado,Aprovado,
+,campo vazio,,,,Aprovado,Aprovado,
+,,,,,,,
+Período de locação,possível escolher de 1 dia,1,um dia,1,Aprovado,Aprovado,
+,possível escolher de 2 dias,2,dois dias,2,Aprovado,Aprovado,
+,possível escolher de 3 dias,3,tres dias,3,Aprovado,Aprovado,
+,possível escolher de 4 dias,4,quatro dias,4,Aprovado,Aprovado,
+,possível escolher de 5 dias,5,cinco dias,5,Aprovado,Aprovado,
+,possível escolher de 6 dias,6,seis dias,6,Aprovado,Aprovado,
+,possível escolher de 7 dias,7,sete dias,7,Aprovado,Aprovado,
+,campo obrigatorio,,,,Aprovado,Aprovado,
+,campo vazio,,,,Aprovado,Aprovado,
+,,,,,,,
+cor,Preto,,Seleciona cor preta,,Aprovado,Aprovado,
+,cinza,,Seleciona cor cinza,,Aprovado,Aprovado,
+,Uma cor,,Seleciona uma cor,,Aprovado,Aprovado,
+,Ambas as cores,,Seleciona Ambas as cores,,Aprovado,Aprovado,
+,,,,,,,
+comentarios,Apenas letras latinas,,Pao de queijo,,Aprovado,Aprovado,
+,Letras nao latina,,"西缺西缺
+",,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-7
+,usando numero,,2Paes,,Aprovado,Aprovado,
+,usando espaço,, Paes de queijo,,Aprovado,Aprovado,
+,usando traços,, paes-de-queijo,,Aprovado,Aprovado,
+,usando barras,,Pao/de/queijo,,Aprovado,Aprovado,
+,usando pontos e vírgula,,"Pao,de.queijo",,Aprovado,Aprovado,
+,Deve ter ate 24 caracteres,(0-24),Pao de queijo,(0-24),Aprovado,Aprovado,
+,Mais que 24 caracteres,(25-26),"pão de queijo
+Isso é tudo que eu desejo",(25-26),Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-8
