@@ -64,7 +64,8 @@ Telefone,"Apenas números e o símbolo ""+""",,(+12345678911),,Aprovado,Aprovado
 ,campo vazio,,,,Aprovado,Aprovado,
 ,campo obrigatorio,,,,Aprovado,Aprovado,
 ,,,,,,,
-"Data de entrega",data futura,,06/04/2024,,Aprovado,Aprovado,
+"Data de entrega
+",data futura,,06/04/2024,,Aprovado,Aprovado,
 ,data atual,,05/04/2024,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-5
 ,data passada,,03/04/2024,,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-6
 ,outras datas,,14/05/2024,,Aprovado,Aprovado,
