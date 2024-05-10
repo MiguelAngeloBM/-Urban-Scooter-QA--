@@ -1,0 +1,63 @@
+#,Descrição da revisão,"Chrome 85
+1920x1080","Opera 71
+1920x1080",Link para o relatório de bug
+cabeçalho,,,,
+O botao exibir pedido e exibido no cabeçalho,,,,
+"Verificar se apos clicar em status do pedido abre o campo ""insira o numero do pedido",,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-36
+Verificar apos de colocar o numero do pedido e apertar enter seremos direcionados ,,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-31
+Verificar com ID correto,,,,
+"Se o pedido não existir, há a imagem de uma scooter quebrada",,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-32
+,,,,
+Dados do pedido do usuario,,,,
+"Verificar se o campo ""nome"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Sobrenome"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Endereço"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Estação de metrô"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Telefone"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Quando será entregue"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Periodo de locaçao"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Cor"" e exibido igual o preenchido para fazer o pedido",,,,
+"Verificar se o campo ""Comentario"" e exibido igual o preenchido para fazer o pedido",,,,
+Se o texto do comentário for muito longo,,,,
+Cadeia de status do pedido,,,,
+" Verificar se o status inicial do pedido é definido corretamente como ""A scooter está no depósito"" após a realização do pedido.",,,,
+"Verificar se a ""A scooter está no depósito O entregador vai retirá-la em breve"" So ela esta em negrito enquanto o entregador nao retira",,,,
+"Confirmar se o status muda para ""O entregador está a caminho"" após o entregador aceitar o pedido.",,,,
+"Verificar se as informações do entregador (nome, .) são exibidas corretamente.",,,,
+"Testar se o status muda automaticamente após um determinado período, caso o entregador não confirme a partida.",,,,
+"Verificar que so o o ""entregador esta a caminho"" ficara em negrito ate o entregador chegar",,,,
+"Verificar se o status muda para ""O entregador chegou"" após o entregador confirmar a chegada.",7,,,
+Confirmar se a hora de chegada do entregador é registrada corretamente.,Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+"Testar se o status muda automaticamente após um período específico, caso o entregador não confirme a entrega.",Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+"Verificar que so o o ""o entregador chegou"" ficara em negrito ate começar o período de aluguel",Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+"Verificar se o status muda para ""Ok, vamos dar uma volta"" após o entregador confirmar a entrega.",Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+testar se o tempo de locação é exibido corretamente abaixo do título do status.,Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+Verificar se o status muda automaticamente após o término do tempo de locação.,Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""1""dia",,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""2""dias",,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""3""dias",,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""4""dias",,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""5""dias",,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""6""dias",,,,
+"Verificar se a scooter esta no deposito usando o periodo de locaçao de ""7""dias",,,,
+Se o nome do entregador for muito longo ,,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-37
+Cancelamento de ordem,,,,
+"Botão ""Cancelar Pedido"":
+",,,,
+"Verificar se o botão ""Cancelar Pedido"" está presente e acessível na página de status do pedido.",,,,
+"Testar se o botão ""Cancelar Pedido"" está ativo apenas enquanto o pedido não foi entregue ao usuário.",,,,
+"Testar se uma janela pop-up de confirmação é exibida ao clicar no botão ""Cancelar Pedido"".",,,,
+Verificar se a mensagem na janela pop-up confirma o cancelamento e solicita a confirmação do usuário.,,,,
+Testar se a janela pop-up exibe opções para confirmar ou cancelar o cancelamento do pedido,,,,
+"Verificar se o botão ""Cancelar"" na janela pop-up fecha a janela ao clicar em voltar",,,,
+"Testar se o pedido é cancelado com sucesso ao clicar no botão ""Confirmar"" na janela pop-up.",,,,
+Verificar se uma mensagem de confirmação é exibida após o cancelamento bem-sucedido do pedido.,,,,
+Testar se o usuário é redirecionado para a página inicial após o cancelamento bem-sucedido.,,,,
+Verificar se o pedido cancelado é removido do sistema e não está mais visível para o usuário.,,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-33
+Testar se os detalhes do pedido cancelado não são mais acessíveis na página de status do pedido.,Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+"Testar se o botão ""Cancelar Pedido"" não está disponível após o pedido ser entregue ao usuário.",Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
+pedido pode ser cancelado antes de ser retirado pelo entregador,,,,
+Validar pedido vencido,,,,
+"Se o pedido estiver atrasado, o seu status muda para ""O entregador está atrasado"" ",,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-34
+"texto muda para ""Não será possível entregar a scooter a tempo",,,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-35
+"Caso uma encomenda em atraso seja entregue ao usuário, a contagem regressiva para o fim do período de locação é iniciada quando o pedido é recebido.",Nao e possivel fazer a validaçao do teste pois nao temos um Endpoint que tenha essa funçao,,,
