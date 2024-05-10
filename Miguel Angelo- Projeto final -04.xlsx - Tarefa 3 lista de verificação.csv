@@ -1,0 +1,501 @@
+,,,
+,,,
+Descrição,Resultado esperado,Status,Link para o relatório de bug
+POST /api/v1/courier,,,
+login,,,
+"Enviar requisiçao POST para adicionar um entregador
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 201 created,,
+,Não há erros na estrutura da resposta,,
+,O entregador e adicionado,,
+"Enviar requisiçao POST para adicionar um entregador com login repetido
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 409 Conflict,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar o mesmo login,,
+"Enviar requisiçao POST para adicionar um entregador usando letras nao latinas
+
+{
+    ""login"": ""西缺西缺"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-9
+"Enviar requisiçao POST para adicionar um entregador usando simbolos
+
+{
+    ""login"": ""!@#"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-10
+"Enviar requisiçao POST para adicionar um entregador usando numeros
+
+{
+    ""login"": ""123"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-11
+"Enviar requisiçao POST para adicionar um entregador menos que 2 caracteres
+{
+    ""login"": ""a"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-12
+"Enviar requisiçao POST para adicionar um entregador mais que 10 caracteres
+{
+    ""login"": ""oisqasrfkak"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-13
+"Enviar requisiçao POST para adicionar um entregador O campo ""login e obrigatorio
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Entregado adicionado  com  sucesso,,
+"Enviar requisiçao POST para adicionar um entregador usando campo vazio
+{
+    ""login"": """",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 400bad request,,
+,Não há erros na estrutura da resposta,,
+,Nao e possivel adicionar entregador sem login,,
+,,,
+senha,,,
+"Enviar requisiçao POST para adicionar um entregador Apenas numeros inteiros
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 201 created,,
+,Não há erros na estrutura da resposta,,
+,O entregador e adicionado,,
+"Enviar requisiçao POST para adicionar um entregador usando numeros nao inteiros
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""2.1.34"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,
+"Enviar requisiçao POST para adicionar um entregador usando menos de 4 numeros
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""123"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-14
+"Enviar requisiçao POST para adicionar um entregador usando mais de 4 numeros
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""12345"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-15
+"Enviar requisiçao POST para adicionar um entregador campo obrigatorio
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,
+"Enviar requisiçao POST para adicionar um entregador campo vazio
+
+{
+    ""login"": ""ninja"",
+    ""password"": """",
+    ""firstName"": ""saske""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,
+,,,
+FirstName,,,
+"Enviar requisiçao POST para adicionar um entregador
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 201 created,,
+,Não há erros na estrutura da resposta,,
+,O entregador e adicionado,,
+"Enviar requisiçao POST para adicionar um entregador usando letras nao latinas
+
+{
+    ""login"": ""saske"",
+    ""password"": ""1234"",
+    ""firstName"": ""西缺西缺""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-16
+"Enviar requisiçao POST para adicionar um entregador usando simbolos
+
+{
+    ""login"": ""saske"",
+    ""password"": ""1234"",
+    ""firstName"": ""!@#!""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-17
+"Enviar requisiçao POST para adicionar um entregador usando numeros
+
+{
+    ""login"": ""saske"",
+    ""password"": ""1234"",
+    ""firstName"": ""1231""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-18
+"Enviar requisiçao POST para adicionar um entregador menos que 2 caracteres
+{
+    ""login"": ""asda"",
+    ""password"": ""1234"",
+    ""firstName"": ""a""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-19
+"Enviar requisiçao POST para adicionar um entregador mais que 10 caracteres
+{
+    ""login"": ""saske"",
+    ""password"": ""1234"",
+    ""firstName"": ""oisqasrfkak""
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-20
+"Enviar requisiçao POST para adicionar um entregador usando campo vazio
+{
+    ""login"": ""sakse"",
+    ""password"": ""1234"",
+    ""firstName"": """"
+}",Código de resposta e status 200 OK,,
+,Não há erros na estrutura da resposta,,
+,E possivel adicionar o entregador ,,
+,,,
+"Enviar requisiçao POST para adicionar um entregador apagando o campo ""login""
+
+{
+
+    ""password"": ""1234"",
+    ""firstName"": ""saske""
+}",Código de resposta e status 400 bad request,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,
+"Enviar requisiçao POST para adicionar um entregador apagando o campo ""password""
+
+{
+    ""login"": ""ninja"",
+ 
+    ""firstName"": ""saske""
+}",Código de resposta e status 400 bad request,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,
+"Enviar requisiçao POST para adicionar um entregador apagando o campo ""FirstName""
+
+{
+    ""login"": ""ninja"",
+    ""password"": ""1234"",
+  
+}",Código de resposta e status 201 created,,
+,Não há erros na estrutura da resposta,,
+,O entregador e adicionado,,
+"Enviar requisiçao POST para adicionar um entregador apagando todos os campos
+
+{
+   
+}",Código de resposta e status 400 bad request,,
+,Não há erros na estrutura da resposta,,
+,Nao  e possivel adicionar um entregador ,,
+DELETE /api/v1/courier/:id,,,
+"Deletar um entregador sem pedido associado 
+{
+    ""id"": ""3""
+}",Código de resposta e status 200 OK,,
+,E possivel Deletar o entregador,,
+"Deletar um entregador com um pedido associado 
+{
+    ""id"": ""3""
+}",Código de resposta e status 200 OK,,
+,E possivel Deletar o entregador,,
+"Deletar um entregador com um Id errado
+""id"": ""5"" 
+}",404 not found,,
+,Nao existe entregador,,
+"Deletar um entregador com o ID vazio
+{ 
+""id"": """" 
+}",400 bad request,,
+,Nao existe entregador,,
+ PUT /api/v1/orders/cancel,,,
+"Cancelar pedido sem um entregador  vinculado
+{
+    ""track"": 260474
+}
+",Código de resposta e status 200 OK,,
+,E possivel Deletar o entregador,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-21
+"Cancelar pedido com um entregador  vinculado
+{
+    ""track"": 260474
+}
+",Código de resposta e status 200 OK,,
+,E possivel Deletar o entregador,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-22
+"Cancelar pedido com um Track inexistente
+{
+    ""track"": 111111
+}
+",Código de resposta e status 404 not found,,
+,Impossivel cancelar,,"https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/PF/issues/PF-24?filter=allissues&jql=project%20%3D%20""PF""%20ORDER%20BY%20created%20DESC"
+"Cancelar pedido com Usando letras latinas
+{
+    ""track"": ""Letras""
+}
+",Código de resposta e status 400bad request,,
+,Impossivel cancelar,,
+"Cancelar pedido com Letras nao latinas
+{
+    ""track"": ""西缺西缺""
+}
+",Código de resposta e status 400bad request,,
+,Impossivel cancelar,,
+"Cancelar pedido com Usando Simbolos
+{
+    ""track"": ""!@#!@#""
+}
+",Código de resposta e status 400bad request,,
+,Impossivel cancelar,,
+"Cancelar pedido com o campo Track vazio
+{
+    ""track"": """"
+}
+",Código de resposta e status 400bad request,,
+,Impossivel cancelar,,
+"Cancelar pedido com o campo Track Apagado
+{
+ 
+}
+",Código de resposta e status 400bad request,,
+,Impossivel cancelar,,
+GET /api/v1/orders/track,,,
+"Consultar um pedido  de uma ordem existente
+
+{{baseUrl}}/api/v1/orders/track?t=138199",Código de resposta e status 200 OK,,
+,O pedido existe,,
+"Consultar um pedido  de uma ordem instextente
+{{baseUrl}}/api/v1/orders/track?t=138199",Código de resposta e status 404 not found,,
+,Nao existe pedidos,,
+"Consultar um pedido  de uma ordem Usando letras latinas
+{{baseUrl}}/api/v1/orders/track?t=letras",Código de resposta e status 400bad request,,
+,Nao existe pedidos,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-29
+"Consultar um pedido  de uma ordem Usando letras nao  latinas
+{{baseUrl}}/api/v1/orders/track?t=西缺西缺",Código de resposta e status 400bad request,,
+,Nao existe pedidos,,https://lnzzepphyr-1709991917578.atlassian.net/browse/PF-30
+"Consultar um pedido  de uma ordem Usando simbolos
+{{baseUrl}}/api/v1/orders/track?t=!@#!@#",Código de resposta e status 400bad request,,
+,Nao existe pedidos,,
+"Consultar um pedido  de uma ordem Sem um  track
+{{baseUrl}}/api/v1/orders/track?t=",Código de resposta e status 400bad request,,
+,Nao existe pedidos,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+"Criar um entregador :POST /api/v1/courier
+Deletar um entregador: DELETE /api/v1/courier/:id
+Cancelar uma order: PUT /api/v1/orders/cancel
+Consultar um pedido: GET /api/v1/orders/track",,,
