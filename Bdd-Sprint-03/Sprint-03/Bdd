@@ -1,0 +1,465 @@
+# Feature: Acessar Urban.Routes
+
+Scenario: Ao acessar o Urban.Routes é exibido o nome "Plataforma"
+Given que eu acesso o Urban.Routes no Google Chrome com resolução 800x600
+When a página é carregada
+Then o nome "Plataforma" não deve ser exibido
+And a revisão é Negada
+
+Given que eu acesso o Urban.Routes no Firefox com resolução 1920x1080
+When a página é carregada
+Then o nome "Plataforma" não deve ser exibido
+And a revisão é Negada
+
+Scenario: Ao acessar o Urban.Routes os campos "De" e "Para" aparecem vazios
+Given que eu acesso o Urban.Routes no Google Chrome com resolução 800x600
+When a página é carregada
+Then os campos "De" e "Para" devem aparecer vazios
+And a revisão é Aprovada
+
+Given que eu acesso o Urban.Routes no Firefox com resolução 1920x1080
+When a página é carregada
+Then os campos "De" e "Para" devem aparecer vazios
+And a revisão é Aprovada
+
+Scenario: Ao acessar o Urban.Routes aparece um círculo vermelho antes do campo "De"
+Given que eu acesso o Urban.Routes no Google Chrome com resolução 800x600
+When a página é carregada
+Then deve aparecer um círculo vermelho antes do campo "De"
+And a revisão é Aprovada
+
+Given que eu acesso o Urban.Routes no Firefox com resolução 1920x1080
+When a página é carregada
+Then deve aparecer um círculo vermelho antes do campo "De"
+And a revisão é Aprovada
+
+Scenario: Ao acessar o Urban.Routes aparece um círculo azul antes do campo "Para"
+Given que eu acesso o Urban.Routes no Google Chrome com resolução 800x600
+When a página é carregada
+Then deve aparecer um círculo azul antes do campo "Para"
+And a revisão é Aprovada
+
+Given que eu acesso o Urban.Routes no Firefox com resolução 1920x1080
+When a página é carregada
+Then deve aparecer um círculo azul antes do campo "Para"
+And a revisão é Aprovada
+
+Scenario: Ao acessar o Urban.Routes os campos "De" e "Para" ficam em vermelho com a mensagem "Insira um endereço"
+Given que eu acesso o Urban.Routes no Google Chrome com resolução 800x600
+When a página é carregada
+Then os campos "De" e "Para" devem ficar em vermelho com a mensagem "Insira um endereço"
+And a revisão é Aprovada
+
+Given que eu acesso o Urban.Routes no Firefox com resolução 1920x1080
+When a página é carregada
+Then os campos "De" e "Para" devem ficar em vermelho com a mensagem "Insira um endereço"
+And a revisão é Aprovada
+
+# Feature: Seleção de Opção de Corrida no Urban.Routes
+
+Scenario: Ao colocar o destino aparece a opção de corrida "Optimal"
+Given que eu coloco um destino válido no Urban.Routes no Google Chrome com resolução 800x600
+When o destino é inserido
+Then deve aparecer a opção de corrida "Optimal"
+And a revisão é Aprovada
+
+Given que eu coloco um destino válido no Urban.Routes no Firefox com resolução 1920x1080
+When o destino é inserido
+Then deve aparecer a opção de corrida "Optimal"
+And a revisão é Aprovada
+
+Scenario: Ao colocar o destino aparece a opção de corrida "Flash"
+Given que eu coloco um destino válido no Urban.Routes no Google Chrome com resolução 800x600
+When o destino é inserido
+Then deve aparecer a opção de corrida "Flash"
+And a revisão é Aprovada
+
+Given que eu coloco um destino válido no Urban.Routes no Firefox com resolução 1920x1080
+When o destino é inserido
+Then deve aparecer a opção de corrida "Flash"
+And a revisão é Aprovada
+
+Scenario: Ao colocar o destino aparece a opção de corrida "Personal"
+Given que eu coloco um destino válido no Urban.Routes no Google Chrome com resolução 800x600
+When o destino é inserido
+Then deve aparecer a opção de corrida "Personal"
+And a revisão é Aprovada
+
+Given que eu coloco um destino válido no Urban.Routes no Firefox com resolução 1920x1080
+When o destino é inserido
+Then deve aparecer a opção de corrida "Personal"
+And a revisão é Aprovada
+
+Scenario: Ao colocar o destino aparecem os ícones dos meios de transporte
+Given que eu coloco um destino válido no Urban.Routes no Google Chrome com resolução 800x600
+When o destino é inserido
+Then devem aparecer os ícones dos meios de transporte
+And a revisão é Reprovada
+
+Given que eu coloco um destino válido no Urban.Routes no Firefox com resolução 1920x1080
+When o destino é inserido
+Then devem aparecer os ícones dos meios de transporte
+And a revisão é Reprovada
+
+Scenario: Ao colocar o destino e selecionar a opção "Personal" aparece um veículo azul ao lado dos textos "Carsharing" e "Duração"
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Personal" é selecionada
+Then deve aparecer um veículo azul ao lado dos textos "Carsharing" e "Duração"
+And a revisão é Aprovada
+
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Personal" é selecionada
+Then deve aparecer um veículo azul ao lado dos textos "Carsharing" e "Duração"
+And a revisão é Aprovada
+
+Scenario: Ao colocar o destino e selecionar a opção "Personal" aparece o texto "Carsharing"
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Personal" é selecionada
+Then deve aparecer o texto "Carsharing"
+And a revisão é Aprovada
+
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Personal" é selecionada
+Then deve aparecer o texto "Carsharing"
+And a revisão é Aprovada
+
+Scenario: Ao colocar o destino e selecionar a opção "Personal" aparece o texto "Duração"
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Personal" é selecionada
+Then deve aparecer o texto "Duração"
+And a revisão é Reprovada
+
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Personal" é selecionada
+Then deve aparecer o texto "Duração"
+And a revisão é Reprovada
+
+Scenario: Ao colocar o destino e selecionar a opção "Personal" aparece um botão azul escrito "Reservar"
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Personal" é selecionada
+Then deve aparecer um botão azul escrito "Reservar"
+And a revisão é Reprovada
+
+Given que eu coloco um destino válido e seleciono a opção "Personal" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Personal" é selecionada
+Then deve aparecer um botão azul escrito "Reservar"
+And a revisão é Reprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção de veículos "Casual"
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção de veículos "Casual"
+And a revisão é Aprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção de veículos "Casual"
+And a revisão é Aprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção de veículos "Camping"
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção de veículos "Camping"
+And a revisão é Aprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção de veículos "Camping"
+And a revisão é Aprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção de veículos "Luxury"
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção de veículos "Luxury"
+And a revisão é Aprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção de veículos "Luxury"
+And a revisão é Aprovada
+
+Scenario: Ao selecionar a opção de veículos aparece o nome do veículo em negrito
+Given que eu seleciono uma opção de veículo no Urban.Routes no Google Chrome com resolução 800x600
+When a opção de veículo é selecionada
+Then o nome do veículo deve aparecer em negrito
+And a revisão é Aprovada
+
+Given que eu seleciono uma opção de veículo no Urban.Routes no Firefox com resolução 1920x1080
+When a opção de veículo é selecionada
+Then o nome do veículo deve aparecer em negrito
+And a revisão é Aprovada
+
+Scenario: Ao selecionar a opção de veículos aparece o texto de finalidade do veículo em negrito
+Given que eu seleciono uma opção de veículo no Urban.Routes no Google Chrome com resolução 800x600
+When a opção de veículo é selecionada
+Then o texto de finalidade do veículo deve aparecer em negrito
+And a revisão é Aprovada
+
+Given que eu seleciono uma opção de veículo no Urban.Routes no Firefox com resolução 1920x1080
+When a opção de veículo é selecionada
+Then o texto de finalidade do veículo deve aparecer em negrito
+And a revisão é Aprovada
+
+Scenario: Ao selecionar a opção de veículos aparece o texto do tempo e a "Espera gratuita"
+Given que eu seleciono uma opção de veículo no Urban.Routes no Google Chrome com resolução 800x600
+When a opção de veículo é selecionada
+Then o texto do tempo e a "Espera gratuita" devem aparecer
+And a revisão é Reprovada
+
+Given que eu seleciono uma opção de veículo no Urban.Routes no Firefox com resolução 1920x1080
+When a opção de veículo é selecionada
+Then o texto do tempo e a "Espera gratuita" devem aparecer
+And a revisão é Reprovada
+
+Scenario: Ao selecionar a opção de veículos aparece uma imagem do veículo
+Given que eu seleciono uma opção de veículo no Urban.Routes no Google Chrome com resolução 800x600
+When a opção de veículo é selecionada
+Then deve aparecer uma imagem do veículo
+And a revisão é Aprovada
+
+Given que eu seleciono uma opção de veículo no Urban.Routes no Firefox com resolução 1920x1080
+When a opção de veículo é selecionada
+Then deve aparecer uma imagem do veículo
+And a revisão é Aprovada
+
+Scenario: Ao selecionar a opção de veículos aparece o texto de benefícios
+Given que eu seleciono uma opção de veículo no Urban.Routes no Google Chrome com resolução 800x600
+When a opção de veículo é selecionada
+Then deve aparecer o texto de benefícios
+And a revisão é Aprovada
+
+Given que eu seleciono uma opção de veículo no Urban.Routes no Firefox com resolução 1920x1080
+When a opção de veículo é selecionada
+Then deve aparecer o texto de benefícios
+And a revisão é Aprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção "Adicionar carteira de motorista" com uma seta
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Adicionar carteira de motorista" com uma seta
+And a revisão é Reprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Adicionar carteira de motorista" com uma seta
+And a revisão é Reprovada
+
+Scenario: Ao selecionar "Reservar" ao adicionar a "Carteira de motorista" fica com uma borda verde e um "V"
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a carteira de motorista é adicionada
+Then deve ficar com uma borda verde e um "V"
+And a revisão é Reprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a carteira de motorista é adicionada
+Then deve ficar com uma borda verde e um "V"
+And a revisão é Reprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção "Método de pagamento" "Adicionar" com um cartão e uma seta
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Método de pagamento" "Adicionar" com um cartão e uma seta
+And a revisão é Reprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Método de pagamento" "Adicionar" com um cartão e uma seta
+And a revisão é Reprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção "Requisitos do pedido"
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Requisitos do pedido"
+And a revisão é Aprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Requisitos do pedido"
+And a revisão é Aprovada
+
+Scenario : Ao selecionar a opção "Requisitos do pedido" ela expande liberando mais opções
+Given que eu seleciono "Requisitos do pedido" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Requisitos do pedido" é expandida
+Then deve liberar mais opções
+And a revisão é Aprovada
+
+Given que eu seleciono "Requisitos do pedido" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Requisitos do pedido" é expandida
+Then deve liberar mais opções
+And a revisão é Aprovada
+
+Scenario: Ao selecionar a opção "Requisitos do pedido" ela expande liberando a opção "Carregador de telefone"
+Given que eu seleciono "Requisitos do pedido" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Requisitos do pedido" é expandida
+Then deve liberar a opção "Carregador de telefone"
+And a revisão é Aprovada
+
+Given que eu seleciono "Requisitos do pedido" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Requisitos do pedido" é expandida
+Then deve liberar a opção "Carregador de telefone"
+And a revisão é Aprovada
+
+Scenario: Ao selecionar a opção "Requisitos do pedido" ela expande liberando a opção "Música suave para tarifa luxury"
+Given que eu seleciono "Requisitos do pedido" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Requisitos do pedido" é expandida
+Then deve liberar a opção "Música suave para tarifa luxury"
+And a revisão é Aprovada
+
+Given que eu seleciono "Requisitos do pedido" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Requisitos do pedido" é expandida
+Then deve liberar a opção "Música suave para tarifa luxury"
+And a revisão é Aprovada
+
+Scenario: Ao selecionar "Reservar" aparece a opção "Adicionar carteira de motorista e reservar"
+Given que eu seleciono "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Adicionar carteira de motorista e reservar"
+And a revisão é Reprovada
+
+Given que eu seleciono "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer a opção "Adicionar carteira de motorista e reservar"
+And a revisão é Reprovada
+
+Scenario: Na opção "Adicionar carteira de motorista e reservar" em baixo aparece "O tempo da rota e os quilômetros"
+Given que eu seleciono "Adicionar carteira de motorista e reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Adicionar carteira de motorista e reservar" é selecionada
+Then deve aparecer "O tempo da rota e os quilômetros" em baixo
+And a revisão é Reprovada
+
+Given que eu seleciono "Adicionar carteira de motorista e reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Adicionar carteira de motorista e reservar" é selecionada
+Then deve aparecer "O tempo da rota e os quilômetros" em baixo
+And a revisão é Reprovada
+
+Scenario: Cadastrando a "Carteira de motorista" a opção fica "Adicionar um método de pagamento e reservar"
+Given que eu cadastro a "Carteira de motorista" no Urban.Routes no Google Chrome com resolução 800x600
+When a "Carteira de motorista" é cadastrada
+Then deve aparecer a opção "Adicionar um método de pagamento e reservar"
+And a revisão é Reprovada
+
+Given que eu cadastro a "Carteira de motorista" no Urban.Routes no Firefox com resolução 1920x1080
+When a "Carteira de motorista" é cadastrada
+Then deve aparecer a opção "Adicionar um método de pagamento e reservar"
+And a revisão é Reprovada
+
+Scenario: Na opção "Adicionar um método de pagamento e reservar" em baixo aparece "O tempo da rota e os quilômetros"
+Given que eu seleciono "Adicionar um método de pagamento e reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Adicionar um método de pagamento e reservar" é selecionada
+Then deve aparecer "O tempo da rota e os quilômetros" em baixo
+And a revisão é Reprovada
+
+Given que eu seleciono "Adicionar um método de pagamento e reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Adicionar um método de pagamento e reservar" é selecionada
+Then deve aparecer "O tempo da rota e os quilômetros" em baixo
+And a revisão é Reprovada
+
+Scenario: Cadastrando o cartão a opção fica "Reservar"
+Given que eu cadastro o cartão no Urban.Routes no Google Chrome com resolução 800x600
+When o cartão é cadastrado
+Then deve aparecer a opção "Reservar"
+And a revisão é Reprovada
+
+Given que eu cadastro o cartão no Urban.Routes no Firefox com resolução 1920x1080
+When o cartão é cadastrado
+Then deve aparecer a opção "Reservar"
+And a revisão é Reprovada
+
+Scenario: Na opção "Reservar" em baixo aparece "O tempo da rota e os quilômetros"
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve aparecer "O tempo da rota e os quilômetros" em baixo
+And a revisão é Reprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve aparecer "O tempo da rota e os quilômetros" em baixo
+And a revisão é Reprovada
+
+Scenario: Ao selecionar a opção "Reservar" abre um pop-up com as informações da corrida
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When a opção "Reservar" é selecionada
+Then deve abrir um pop-up com as informações da corrida
+And a revisão é Aprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When a opção "Reservar" é selecionada
+Then deve abrir um pop-up com as informações da corrida
+And a revisão é Aprovada
+
+Scenario: No pop-up aparece "O carro foi reservado"
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When o pop-up abre
+Then deve aparecer "O carro foi reservado"
+And a revisão é Aprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When o pop-up abre
+Then deve aparecer "O carro foi reservado"
+And a revisão é Aprovada
+
+Scenario: No pop-up aparece "Espera gratuita com os minutos"
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When o pop-up abre
+Then deve aparecer "Espera gratuita com os minutos"
+And a revisão é Aprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When o pop-up abre
+Then deve aparecer "Espera gratuita com os minutos"
+And a revisão é Aprovada
+
+Scenario: No pop-up aparece o modelo do carro juntamente com a placa
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When o pop-up abre
+Then deve aparecer o modelo do carro juntamente com a placa
+And a revisão é Reprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When o pop-up abre
+Then deve aparecer o modelo do carro juntamente com a placa
+And a revisão é Reprovada
+
+Scenario: No pop-up aparece uma imagem do carro
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When o pop-up abre
+Then deve aparecer uma imagem do carro
+And a revisão é Aprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When o pop-up abre
+Then deve aparecer uma imagem do carro
+And a revisão é Aprovada
+
+Scenario: No pop-up aparece um botão com um "X" Cancelar
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When o pop-up abre
+Then deve aparecer um botão com um "X" Cancelar
+And a revisão é Aprovada
+
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Firefox com resolução 1920x1080
+When o pop-up abre
+Then deve aparecer um botão com um "X" Cancelar
+And a revisão é Aprovada
+
+Scenario: No pop-up aparece o endereço do carro
+Given que eu seleciono a opção "Reservar" no Urban.Routes no Google Chrome com resolução 800x600
+When o pop-up abre
+Then deve aparecer o endereço do carro
+And a revisão é Aprovada
+
+Given that I select the option "Reservar" on Urban.Routes in Firefox with a resolution of 1920x1080
+When the pop-up opens
+Then the address of the car should appear
+And the review is approved
+
+Scenario: In the pop-up appears "Saber mais sobre a viagem"
+Given that I select the "Reservar" option on Urban.Routes in Google Chrome with a resolution of 800x600
+When the pop-up opens
+Then "Saber mais sobre a viagem" should appear
+And the review is approved
+
+Given that I select the "Reservar" option on Urban.Routes in Firefox with a resolution of 1920x1080
+When the pop-up opens
+Then "Saber mais sobre a viagem" should appear
+And the review is approved
